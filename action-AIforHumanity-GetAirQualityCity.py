@@ -46,7 +46,7 @@ def action_wrapper(hermes, intentMessage, conf):
     params = {
         'debut': dt.datetime.today().strftime('%Y-%m-%d'),
         'fin': dt.datetime.today().strftime('%Y-%m-%d'),
-        'ville': 'La Roche-sur-Yon'
+        'ville': city
     }
     res = requests.get('http://www.airpl.org/api/indices', params=params)
     data = res.json()
