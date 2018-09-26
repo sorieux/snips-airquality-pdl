@@ -40,7 +40,8 @@ def action_wrapper(hermes, intentMessage, conf):
     - conf : a dictionary that holds the skills parameters you defined 
 
     Refer to the documentation for further details. 
-    """ 
+    """
+    print "start script"
     city = intentMessage.slots.city.first().value
     
     params = {
